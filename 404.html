@@ -1,0 +1,35 @@
+<@include path="include/header.html"/@>
+
+<aside class="col-three alpha">
+    <h2>Sitemap:</h2>
+    <nav>
+        <@menu name="mainmenu" showchildren="true" hidehome="false" showall="true" /@>
+    </nav>
+</aside>   
+    
+<section id="content" class="col-nine omega">
+    <article class="bit-text">
+        <h1><@page field="name"/@></h1>
+        <h2>Having trouble finding something?</h2>
+        <h3>Perhaps we can help...</h3>
+        <p>Use the search form below to search the entire site</p>
+        <@form type="search" searchtype="all" buttontext="Search" /@>
+        <hr/>
+        <h2>Additional Help</h2>
+        <p>This site was developed to be user-friendly and accessability-minded. If you have any difficulty while trying to use this site, please keep in mind that this site was built using Web 2.0 techologies including HTML5 and CSS3. If this website appears to be functioning abnormally, it could because you are using an out-of-date or non-standards compliant browser.</p>
+        <p>If this is the case, please consider upgrading your browser to it's newest version, or installing a newer standards-compliant browser. We recommend the following browsers for the best possible web experience:</p>
+        <ul>
+            <li><a href="http://www.google.com/chrome" target="_blank">Google Chrome</a></li>
+            <li><a href="http://www.mozilla.org/en-US/firefox/new" target="_blank">Mozilla Firefox</a></li>
+            <li><a href="http://www.opera.com/" target="_blank">Opera</a></li>
+        </ul>
+        
+        <p>If your browser is up-to-date and you are still experiencing issues, please contact the webmaster using the button below.</p>
+        <p><a class="button" href="#">Contact the Webmaster</a></p>
+        <div class="cl"></div>
+    </article>
+</section>
+
+<div class="cl"></div>
+
+<@include path="include/footer.html"/@>

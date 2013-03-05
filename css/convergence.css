@@ -1,0 +1,827 @@
+/*
+Jazmin
+The HTML5 framework for Convergence CMS
+
+Author: Nate Cornelius
+
+www.jazminframework.com
+www.convergencecms.co
+
+--------------------------
+
+Convergence.css
+Convergence Specific Styles
+
+These styles are specific to the pre-built styles used by 
+convergence. If you already have styles in place to control
+the CMS, you can choose to not use this stylesheet or pull
+only the individual styles you want. There are some added styles
+that aren't included with convergence.
+
+Table of Contents:
+1. Global Styles
+2. Text Modules
+3. Photos Modules
+4. Blog Modules
+5. Comment Styles
+6. Form Modules
+7. Search & Signup
+8. Search Results
+9. Twitter Modules
+10. Item-Lists Modules
+11. Products Modules
+12. hang Dates
+13. User Accounts
+
+--------------------------
+*/
+
+/*------------------
+   Global Styles
+------------------*/
+.cl {
+	clear: both;
+	display: block;
+	height: 0;
+	font-size: 0px;
+	line-height: 0;
+}
+
+.break {
+	margin: 20px 0;
+}
+
+.bit { clear: both; } /* Clear each module to ensure content doesn't flow into other modules. This is a safeguard and can be removed for custom designs. */
+
+/*------------------
+	Text Modules
+------------------*/
+.bit-text p { padding-bottom: 20px; }
+.bit-text ul { list-style: disc; margin-left: 20px; } 
+.bit-text ol { list-style: decimal; margin-left: 20px; }
+img.imageleft { float: left; margin: 0 20px 20px 0; }
+img.imageright { float: right; margin: 0 0 20px 20px; }
+.txtcolorone { color: #39f !important; }
+.txtcolortwo { color: #333 !important; }
+.txtcolorthree { color: #ccc !important; }
+
+/*------------------
+   Photos Modules
+------------------*/
+.flexslider {
+	border: none;
+	border-radius: 0;
+	margin-bottom: 20px;
+	background: none transparent;
+	box-shadow: none;
+}
+.bit-slideshow li { list-style: none; line-height: 0; margin-bottom: 0; }
+
+ul#c-thumbs li {
+  float: left;
+}
+.c-photos-lightbox a {
+  margin: 0 10px 10px 0;
+  float: left;
+  display: block;
+}
+.c-photos-lightbox a img {
+  display: block;
+}
+.c-pager {
+  padding: 10px 0 0 10px;
+}
+.c-pager a {
+  background: #666;
+  border: solid 1px #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  display: block;
+  float: left;
+  height: 10px;
+  font-size: 0px;
+  text-indent: -9999px;
+  width: 10px;
+  margin: 0 5px 5px 0;
+}
+.c-pager a.activeSlide,
+.c-pager a:hover {
+  background: #c1c1c1;
+}
+
+
+/*------------------
+    Blog Modules
+------------------*/
+.bit-article p { margin-bottom: 20px; }
+
+.addthis_toolbox.addthis_default_style .at300bs.at15t_compact {
+  background: url("/resources/images/c-icon-share.png") no-repeat scroll left center transparent;
+}
+.c-share-options .addthis_toolbox.addthis_default_style {
+  float: left;
+}
+.post-meta,
+.post-info-separator,
+a.comments-icon,
+.addthis_toolbox {
+  float: left;
+}
+.post-info-separator {
+  padding: 0 4px;
+}
+.addthis_toolbox {
+  margin-top: 1px;
+}
+.addthis_default_style .addthis_separator,
+.addthis_default_style .at300b,
+.addthis_default_style .at300m,
+.addthis_default_style .at300bs,
+.addthis_default_style a {
+  float: left;
+  padding: 0 3px;
+}
+
+a.back-link {
+  display: block;
+  font-size: 75%;
+  margin: 0 0 20px;
+}
+.article,
+.event {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+h3.post-title {
+  font-size: 120%;
+  line-height: 1.2;
+}
+.display-full h3.post-title {
+  font-size: 180%;
+  line-height: 1;
+}
+.post-info {
+  color: #969696;
+  font-size: 80%;
+  padding: 4px 0;
+}
+.display-summary .post-info {
+  padding-bottom: 8px;
+}
+.display-full .post-info {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.share-options .tags-list {
+  color: #969696;
+  font-size: 80%;
+}
+ul.sitemap {
+  padding-left: 0;
+}
+ul.sitemap li.hasChildren ul {
+  padding-left: 20px;
+}
+.c-bulletin {
+  background: none repeat scroll 0 0 #CA1315;
+  color: #FFFFFF;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  padding: 27px 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.c-bulletin a.c-close-bulletin {
+  background: url("http://www.convergencecms.co/resources/images/white-close-x.png") no-repeat scroll center center transparent;
+  display: block;
+  height: 25px;
+  position: absolute;
+  right: 27px;
+  top: 27px;
+  width: 25px;
+}
+span#bithtml_parent {
+  width: auto !important;
+}
+table#bithtml_tbl {
+  width: 100% !important;
+}
+table#menu_bithtml_bithtml_styleselect_menu_tbl tr#mce_4 a span {
+  color: #000000 !important;
+}
+table#menu_bithtml_bithtml_styleselect_menu_tbl tr#mce_5 a span {
+  color: #444444 !important;
+}
+table#menu_bithtml_bithtml_styleselect_menu_tbl tr#mce_6 a span {
+  color: #888888 !important;
+}
+
+
+/*------------------
+   Comment Styles 
+------------------*/
+.c-black {
+  color: #000000 !important;
+}
+a.rssicon {
+  background: url(" /resources/images/c-rssicon.png") no-repeat scroll center center transparent;
+  cursor: pointer;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.comments {
+  border-top: 1px solid #CCCCCC;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+.comments h4 {
+  padding: 0;
+}
+.commentmeta p {
+  color: #999999;
+  font-size: 9px !important;
+  font-weight: normal;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.commentmeta p strong {
+  color: #333333;
+  font-size: 12px !important;
+  font-weight: normal;
+}
+.comments a.comment-delete {
+  color: #FF3355 !important;
+  cursor: pointer;
+  font-weight: bold;
+}
+.comments a.comment-delete:hover {
+  background: none repeat scroll 0 0 #FF3355 !important;
+  color: #EEEEEE !important;
+  cursor: pointer;
+  font-weight: bold;
+}
+.comment {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #CCCCCC;
+  border-style: solid;
+  border-width: 0 0 1px;
+  padding: 20px 0;
+}
+.commentmeta {
+  float: left;
+  padding: 0 20px 0 0;
+  width: 150px;
+}
+.commentbody {
+  float: left;
+  width: 450px;
+}
+.commentmeta.reviewmeta {
+  padding: 0 20px 0 0;
+  width: 150px;
+}
+.commentbody.reviewbody {
+  padding: 0 20px 0 0;
+  width: 300px;
+}
+.reviewrecommend {
+  float: left;
+  width: 130px;
+}
+input.check {
+  height: 12px;
+  width: 12px;
+}
+form.commentform {
+  background: none repeat scroll 0 0 #E3E3E3;
+  border: 1px solid #C9C9C9;
+  margin: 20px 0 0;
+  padding: 20px;
+  width: auto;
+}
+.comments form.commentform h5 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0 0 20px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+form.commentform label {
+  color: #000000;
+  font-size: 12px;
+}
+form.commentform input {
+  border: 1px solid #C9C9C9;
+  color: #000000;
+  font: 14px Arial, Helvetica, sans-serif;
+  padding: 5px;
+  width: 150px;
+}
+form.commentform input.check {
+  height: 12px;
+  width: 12px;
+}
+form.commentform input.c-blink {
+  color: #999999;
+  width: 190px;
+}
+form.commentform .c-special-form-box {
+  display: none;
+}
+form.commentform input#inputSubmit,
+form.form-module input.form-button-submit {
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 1px 2px rgba(50, 50, 50, 0.2);
+  cursor: pointer;
+  font-weight: normal;
+  height: 40px;
+  margin-top: 33px;
+  padding: 5px;
+}
+form.commentform input#inputSubmit,
+form.form-module input.form-button-submit {
+  background-image: -moz-linear-gradient(center top, #eeeeee, #bbbbbb);
+  border: 1px solid #999999;
+  color: #333333;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+form.commentform input#inputSubmit:hover {
+  background: none repeat scroll 0 0 #F0F0F0;
+}
+form.commentform input#inputSubmit:active,
+form.commentform input#inputSubmit:focus {
+  background-image: -moz-linear-gradient(center top, #eeeeee, #bbbbbb);
+}
+form.commentform input#inputSubmit:disabled {
+  background: none repeat scroll 0 0 #DCDCDC;
+  color: rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+form.commentform .form-item.ficaptcha input {
+  border: 1px solid #999999;
+  width: 163px;
+}
+form.commentform .form-item.blink,
+form.commentform .form-item.cartproductreviewrating {
+  float: left;
+  width: 215px;
+}
+form.commentform .fibox {
+  background: none repeat scroll 0 0 #C9C9C9;
+  border: 1px solid #999999;
+  box-shadow: 0 1px 2px rgba(50, 50, 50, 0.2);
+  padding: 15px;
+  width: auto;
+}
+form.commentform .form-item.fisubmit,
+form.commentform .form-item.ficaptcha {
+  float: left;
+  width: 192px;
+}
+#emailinputrequiredurl,
+#emailinputrequiredurl input,
+#formfieldsrequiredurlbox,
+#formfieldsrequiredurlbox input {
+  display: none !important;
+}
+
+
+/*------------------
+   Events Modules
+------------------*/
+
+/*------------------
+    Form Modules
+------------------*/
+.form-fields .form-item {
+  margin-bottom: 10px;
+}
+.form-fields .form-item label {
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-weight: bold;
+  line-height: 1;
+  margin: 7px 12px 0 0;
+  text-align: right;
+  width: 120px;
+}
+.form-fields .form-item label.error {
+  color: #FF4444;
+  font-size: 80%;
+  margin-left: 10px;
+}
+.form-fields .form-item .upload-image-box {
+  float: left;
+}
+.form-account-login .form-item-box {
+  margin: 0 0 20px;
+}
+.form-account-login .form-item-box label,
+.form-account-login .form-item-box input {
+  display: block;
+}
+.form-fields .form-item select,
+.form-fields .form-item input {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 2px 2px 4px #EEEEEE inset;
+  color: #222222;
+  float: left;
+  font: 16px Arial, Helvetica, sans-serif;
+  padding: 5px;
+  width: 240px;
+}
+.form-fields .form-item select {
+  width: 252px;
+}
+.form-fields .form-item .captcha-box {
+  float: left;
+}
+.form-fields .form-item .captcha-box input {
+  float: none;
+  margin-top: 3px;
+  width: 165px;
+}
+.form-fields .form-item textarea {
+  border: 1px solid #CCCCCC;
+  width: 240px;
+}
+.form-fields .form-item.form-item-active select,
+.form-fields .form-item.form-item-active input {
+  border-color: #196AB9;
+  box-shadow: 0 0 5px #196AB9;
+  color: #000000;
+}
+.form-fields .form-item.form-error select,
+.form-fields .form-item.form-error input {
+  border-color: #FF3300;
+  box-shadow: 0 0 5px #FF3300;
+  color: #FF3300;
+}
+form.form-module input.form-button-submit {
+  font: 16px Arial, Helvetica, sans-serif;
+  margin: 0 0 0 140px;
+}
+form.form-module fieldset.form-background,
+form.form-module .error-section,
+form.form-module .info-section {
+  background: none repeat scroll 0 0 #F0F0F0;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0;
+  padding: 20px;
+}
+form.form-module .error-section {
+  background: none repeat scroll 0 0 #FFDDDD;
+  border-color: #DDBBBB;
+  margin: 10px 0;
+}
+form.form-module .info-section {
+  background: none repeat scroll 0 0 #DDFFDD;
+  border-color: #BBDDBB;
+  margin: 10px 0;
+}
+form.form-module .file-upload {
+  width: 240px;
+  float: left;
+}
+form.form-module .file-upload img {
+  width: 100%;
+  display: block;
+}
+form.form-module .file-upload span {
+  display: block;
+}
+form.form-module a.file-upload-link {
+  font-weight: bold;
+}
+form.form-module .uploaded-file a.file-upload-link {
+  font-weight: normal;
+  font-size: 80%;
+}
+form.form-module .uploaded-file .file-uploaded-box span {
+  background: url("/resources/images/c-file-logo-blank.png") no-repeat left top transparent;
+  padding: 3px 0 13px 37px;
+}
+form.form-module .uploaded-file .file-uploaded-box.file-uploaded-ext-gif span,
+form.form-module .uploaded-file .file-uploaded-box.file-uploaded-ext-png span,
+form.form-module .uploaded-file .file-uploaded-box.file-uploaded-ext-jpeg span,
+form.form-module .uploaded-file .file-uploaded-box.file-uploaded-ext-jpg span {
+  background: none;
+  padding: 0;
+}
+.form-item-required-symbol {
+  color: #CC0000;
+}
+.form-account-login .account-forgot-password-hide {
+  display: none;
+}
+.helpful-message-box,
+form.form-module fieldset.form-background,
+form.form-module .error-section,
+form.form-module .info-section {
+  background: none repeat scroll 0 0 #F0F0F0;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px 5px 5px 5px;
+  margin: 10px 0;
+  padding: 20px;
+}
+.user-personal-form-slugfield,
+.user-personal-form-fi-userslug {
+  display: none;
+}
+
+
+/*------------------
+   Search & Signup
+------------------*/
+/* Search and Signup Forms */
+.c-form-email input {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #A09EA6;
+  color: #A09EA6;
+  float: left;
+  font-size: 11px;
+  margin: 2px 0 0;
+  padding: 3px 6px;
+}
+.c-form-email input.c-button-email {
+  background: url(" /resources/images/c-subscribe.jpg") no-repeat scroll center center transparent;
+  border: medium none;
+  cursor: pointer;
+  font-size: 0;
+  height: 25px;
+  margin: 0 0 0 3px;
+  padding: 0;
+  width: 82px;
+}
+.c-form-email label.error {
+  font-size: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+#c-emailform input {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #A09EA6;
+  color: #A09EA6;
+  float: left;
+  font-size: 11px;
+  margin: 2px 0 0;
+  padding: 3px 6px;
+}
+#c-emailform input.c-subscribe {
+  background: url(" /resources/images/c-subscribe.jpg") no-repeat scroll center center transparent;
+  border: medium none;
+  cursor: pointer;
+  font-size: 0;
+  height: 25px;
+  margin: 0 0 0 3px;
+  padding: 0;
+  width: 82px;
+}
+#c-emailform label.error {
+  font-size: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+.c-form-search input {
+  background: url(" /resources/images/c-search-bar.jpg") no-repeat scroll left top transparent;
+  border: 0 none;
+  color: #FFFFFF;
+  float: left;
+  font-size: 11px;
+  height: 24px;
+  margin: 0;
+  padding: 0 0 0 6px;
+  width: 140px;
+}
+.c-form-search input.c-button-search {
+  background: url(" /resources/images/c-search-button.jpg") no-repeat scroll left top transparent;
+  border: medium none;
+  cursor: pointer;
+  font-size: 0;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 47px;
+}
+.c-form-search label.error {
+  font-size: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+#c-searchform input {
+  background: url(" /resources/images/c-search-bar.jpg") no-repeat scroll left top transparent;
+  border: 0 none;
+  color: #FFFFFF;
+  float: left;
+  font-size: 11px;
+  height: 24px;
+  margin: 0;
+  padding: 6px 0 0 6px;
+  width: 140px;
+}
+#c-searchform input.c-search {
+  background: url(" /resources/images/c-search-button.jpg") no-repeat scroll left top transparent;
+  border: medium none;
+  cursor: pointer;
+  font-size: 0;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 47px;
+}
+#c-searchform label.error {
+  font-size: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+input.error {
+  background: none repeat scroll 0 0 #FFEEEE !important;
+}
+
+/*------------------
+ 	Search Results  
+-------------------*/
+ol.search-results-list {
+  list-style: decimal outside none;
+  padding-left: 30px;
+}
+ul.itemlist-search-results .full-item {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+ul.itemlist-search-results .full-item .subitemlist li {
+  display: none;
+}
+ul.itemlist-search-results .full-item .subitemlist li.item-name {
+  display: block;
+}
+ul.itemlist-search-results .full-item .subitemlist li.item-image,
+ul.itemlist-search-results .full-item .subitemlist li.item-photo,
+ul.itemlist-search-results .full-item .subitemlist li.item-picture,
+ul.itemlist-search-results .full-item .subitemlist li.item-image-1 {
+  border: 1px solid #CCCCCC;
+  display: block;
+  padding: 2px;
+}
+
+
+/*------------------
+   Twitter Modules
+------------------*/
+.tweet { margin-bottom: 20px; list-style: none; }
+.tweet small { display: block; margin-top: 5px; }
+
+
+/*------------------
+ Item-Lists Modules
+------------------*/
+ul.itemlist,
+ul.itemlist ul {
+  list-style: none!important;
+}
+ul.itemlist.display-itemlist-grid li.full-item {
+  margin: 0 10px 10px 0;
+  float: left;
+  display: block;
+}
+
+
+/*------------------
+   Product Modules
+------------------*/
+.product-review-stars-rated {
+  height: 16px;
+  margin: 2px 0;
+}
+.product-image.full-product-image img {
+  display: none;
+}
+.product-image.full-product-image img.firstimg {
+  display: block;
+}
+ul.product-image-thumbs li {
+  float: left;
+}
+.product-no-ratings {
+  color: #AAAAAA;
+}
+.product-no-recommendations {
+  color: #AAAAAA;
+}
+.product-option-error,
+.product-itemlist-option-error {
+  color: #EE0000;
+}
+.product-option-container {
+  margin-bottom: 10px;
+}
+.product-option-container label,
+.product-option-container select,
+.product-itemlist-option-container label,
+.product-itemlist-option-container select {
+  display: block;
+}
+.category-pagination {
+  text-align: center;
+}
+.pagination span,
+.pagination a {
+  margin: 0 5px;
+}
+
+
+/*------------------ 
+	 Hang Dates
+------------------*/
+.hangMeta {
+  float: left;
+  width: 90%;
+}
+.hangDate {
+  float: left;
+  height: 40px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  width: 40px;
+  background: #000;
+}
+.hangDate h5 {
+  margin: 0;
+  color: #FFF;
+}
+h5.hangMonth {
+  font-size: .7em;
+  padding: 2px 0 0;
+}
+
+
+/*-------------------
+ 	User Accounts
+-------------------*/
+.form-account-login .form-item-box {
+  margin: 0 0 20px;
+}
+.form-account-login .form-item-box label,
+.form-account-login .form-item-box input {
+  display: block;
+}
+/* account table styles */
+table.account-transaction-list {
+  width: 100%;
+}
+.account-info address span {
+  display: block;
+}
+.account-container table td,
+.account-container table th {
+  border: 1px solid #7C7C7C;
+  font-size: 13px;
+  padding: 10px;
+}
+/* subscription upload color values */
+table.account-subscription-list.modifying-subscription tr.not-this-row td {
+  opacity: 0.3;
+  background: #ddd;
+}
+table.account-subscription-list.modifying-subscription tr.this-row td {
+  background: #ffd;
+}
+table.account-subscription-list.modifying-subscription tr.this-row a#save-modified-subscription {
+  color: #378702;
+  text-decoration: underline;
+}
+table.account-subscription-list.modifying-subscription tr.this-row a#undo-modified-subscription {
+  color: #db0000;
+  text-decoration: underline;
+}
+table.account-subscription-list.modifying-subscription tr.this-row a#save-modified-subscription:hover,
+table.account-subscription-list.modifying-subscription tr.this-row a#undo-modified-subscription:hover {
+  text-decoration: none;
+}

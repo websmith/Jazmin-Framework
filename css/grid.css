@@ -1,0 +1,131 @@
+/*
+Jazmin
+The HTML5 framework for Convergence CMS
+
+Author: Nate Cornelius
+
+www.jazminframework.com
+www.convergencecms.co
+
+--------------------------
+
+Responsive.css
+Responsive Grid Styles
+
+Use this stylesheet if you want responsive 
+fluid-width columns in place in your project. 
+
+--------------------------
+ 
+ & Columns : 12 
+ & Gutter %: 20% 
+ & MinWidth: 960px
+ & MaxWidth: 1080px
+*/
+
+
+/*-------------------
+		Grid
+-------------------*/
+.col-one 	{ width: 8.33333333333333%; }
+.col-two 	{ width: 16.6666666666667%; }
+.col-three 	{ width: 25%; }
+.col-four 	{ width: 33.3333333333333%; }
+.col-five 	{ width: 41.6666666666667%; }
+.col-six 	{ width: 50%; }
+.col-seven 	{ width: 58.3333333333333%; }
+.col-eight 	{ width: 66.6666666666667%; }
+.col-nine 	{ width: 75%; }
+.col-ten 	{ width: 83.3333333333333%; }
+.col-eleven	{ width: 91.6666666666667%; }
+.col-twelve	{ width: 100%; }
+
+.col-one,
+.col-two,
+.col-three,
+.col-four,
+.col-five,
+.col-six,
+.col-seven,
+.col-eight,
+.col-nine, 
+.col-ten,
+.col-eleven,
+.col-twelve {
+	margin: 0;
+   	padding: 10px 3.3333333333333%;
+	float: left;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+ 	-ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+	-webkit-hyphens: auto;
+   	-moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.ie .col-one,
+.ie .col-two,
+.ie .col-three,
+.ie .col-four,
+.ie .col-five,
+.ie .col-six,
+.ie .col-seven,
+.ie .col-eight,
+.ie .col-nine, 
+.ie .col-ten,
+.ie .col-eleven,
+.ie .col-twelve {
+ 	-ms-word-break: keep-all;
+    word-break: keep-all;
+}
+
+.alpha { padding-left:0px; }
+.omega { padding-right:0px; }
+
+
+/*-------------------
+	Media Queries
+-------------------*/
+@media only screen and (min-width: 960px) {
+}
+
+@media only screen and (max-width: 959px) {
+}
+
+@media only screen and (max-width: 767px) {
+    .col-one,
+    .col-two,
+    .col-three,
+    .col-four { width: 33.333333333333%; }
+    
+    .col-five,
+    .col-six { width: 50%; }
+	
+    .col-seven,
+    .col-eight { width: 66.666666666666%; }  
+
+    .col-nine, 
+    .col-ten,
+    .col-eleven,
+    .col-twelve { width: 100%; }
+}
+
+
+@media only screen and (max-width: 546px) {
+    .col-one,
+    .col-two,
+    .col-three,
+    .col-four,
+    .col-five,
+    .col-six,
+    .col-seven,
+    .col-eight,
+    .col-nine, 
+    .col-ten,
+    .col-eleven,
+    .col-twelve { width: 100%; padding: 10px 3.3333333333333%; }
+}

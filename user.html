@@ -1,0 +1,19 @@
+<@include path="include/header.html"/@>
+
+<@include path="include/sidebar.html"/@>
+
+<section id="content" class="col-nine omega">
+    <article>
+    	<p><@user field="text" whenloggedin="You are logged in" whenloggedout="You are logged out. Please log in to view your account."/@></p>
+        
+        <@user field="menu"/@>
+        <div class="cl"></div>
+    </article>
+    
+    <div class="cl"></div>
+
+</section>
+
+<div class="cl"></div>
+
+<@include path="include/footer.html"/@>
