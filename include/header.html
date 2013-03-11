@@ -27,13 +27,12 @@
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 <!-- Scripts -->
-<script src="scripts/prettify.js"></script>
 <script src="scripts/jazmin.js"></script>
 <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </head>
 
-<body class="page-<@pageurl/@>" onload="prettyPrint()">
+<body class="page-<@page field="url"/@> layout-<@page field="layout"/@>">
 
 <div class="container">
 
@@ -42,8 +41,9 @@
     	<img src="images/jazmin-logo.png">
     </div>
     <div class="col-ten alpha">
-        <h1><a href="./"><@site field="name" /@></a></h1>
+        <nav>
+        	<@menu name="mainmenu" hidehome="false" /@>
+        </nav>
     </div>
     <div class="cl"></div>
 </header>
-

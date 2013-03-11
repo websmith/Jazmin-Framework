@@ -1,20 +1,10 @@
 <@include path="include/header.html"/@>
 
-<hr>
-
-<div class="col-twelve alpha omega">
-    <header>
-    	<nav>
-            <@menu name="mainmenu" showchildren="true" /@>
-        </nav>
-    </header>
-</div>
-
 <@include path="include/sidebar.html"/@>
 
 <section id="content" class="col-nine omega">
     <article>
-    	<@content name="BodyContent" canadd="true" /@>
+    	<@content name="BodyContent" canadd="false" /@>
     </article>
     
     <div class="cl"></div>
