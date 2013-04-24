@@ -711,6 +711,12 @@ ul.itemlist.display-itemlist-grid li.full-item {
   float: left;
   display: block;
 }
+ul.itemlist.display-itemlist-list li.full-item {
+	margin: 0 0 15px 0;
+	float: none;
+	display: block;
+	height: auto;
+}
 
 
 /*------------------
